@@ -10,6 +10,8 @@
 import UIKit
 import Parse
 
+// Put in terminal to get parse dashboard "parse-dashboard --appId instagramclone24 --masterKey 242424242424 --serverURL "http://instagramclone24.herokuapp.com/parse" --appName instagramclone24"
+
 class ViewController: UIViewController {
     
   
@@ -70,7 +72,8 @@ class ViewController: UIViewController {
                 
                 if error == nil {
                     
-                    //signup successful
+                    self.performSegueWithIdentifier("loginSegue", sender: self)
+                    
                 } else {
                     
                     if let errorString = error!.userInfo["error"] as? String {
@@ -90,7 +93,9 @@ class ViewController: UIViewController {
                     UIApplication.sharedApplication().endIgnoringInteractionEvents()
                     
                     if user != nil {
-                        //logged in
+                        
+                        self.performSegueWithIdentifier("loginSegue", sender: self)
+                        
                     } else {
                         
                         if let errorString = error!.userInfo["error"] as? String {
@@ -143,6 +148,14 @@ class ViewController: UIViewController {
         
         self.presentViewController(alert, animated: true, completion: nil)
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if PFUser.currentUser() != nil {
+            
+            self.performSegueWithIdentifier("loginSegue", sender: self)
+        }
     }
     
     
