@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20122AFF1CD029E4003AC4EF /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20122AFE1CD029E4003AC4EF /* cell.swift */; };
+		20122B011CD02A9B003AC4EF /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20122B001CD02A9B003AC4EF /* FeedVC.swift */; };
 		203591061CCFB96800C9D012 /* PostImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203591051CCFB96800C9D012 /* PostImageVC.swift */; };
 		20A16E591CCAB87800A78A41 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A16E581CCAB87800A78A41 /* Launch Screen.storyboard */; };
 		20E233F71CCEE0DE0053D037 /* UserListsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E233F61CCEE0DE0053D037 /* UserListsVC.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20122AFE1CD029E4003AC4EF /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		20122B001CD02A9B003AC4EF /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		203591051CCFB96800C9D012 /* PostImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageVC.swift; sourceTree = "<group>"; };
 		20A16E581CCAB87800A78A41 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		20E233F61CCEE0DE0053D037 /* UserListsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListsVC.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
+				20122AFE1CD029E4003AC4EF /* cell.swift */,
+				20122B001CD02A9B003AC4EF /* FeedVC.swift */,
 				203591051CCFB96800C9D012 /* PostImageVC.swift */,
 				20E233F61CCEE0DE0053D037 /* UserListsVC.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
@@ -194,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20122B011CD02A9B003AC4EF /* FeedVC.swift in Sources */,
 				20E233F71CCEE0DE0053D037 /* UserListsVC.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				203591061CCFB96800C9D012 /* PostImageVC.swift in Sources */,
+				20122AFF1CD029E4003AC4EF /* cell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
